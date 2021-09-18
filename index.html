@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Glide Yes-Code</title>
+</head>
+<div>
+  <span id="result"></span>
+</div>
+<script src="function.js"></script>
+<script src="driver.js"></script>
+
+
+<script>
+  // TEST DEBUG !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  testDebug();
+
+  async function testDebug() {
+  let text = { type: "string", value: "Bonjour c'est moi, manu" };
+  let language = {type:"string", value: "en"};
+
+  // TODO Insert API Key
+  let key = {type:"string", value: " [INSERT API KEY] "};
+  
+  let result = await window.function(text, language, key);
+  document.getElementById("result").innerHTML = result;
+
+  }
+</script>
+</body>
+
+</html>
